@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="40dp"
+            android:text="Registeration"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:id="@+id/te1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/te1"
+            android:layout_marginTop="10dp"
+            android:hint="User Name"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <EditText
+            android:id="@+id/pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/user"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/but1"
+            app:layout_constraintTop_toBottomOf="@id/pas"
+            android:layout_marginTop="10dp"
+            android:text="Log in"
+            android:textColor="#000"
+            android:background="#FAF7F7"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/but1"
+            android:layout_marginTop="10dp"
+            android:text="Sing Up"
+            android:textColor="#000"
+            android:background="#FAF7F7"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
